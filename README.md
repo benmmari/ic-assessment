@@ -20,7 +20,7 @@ Nameko is extremely lightweight and easy to set up and even though it uses rabbb
 
 **Cons:**
 
-Initially, it takes time to implement tools such as Docker, and the time spent can certainly be justified if it pays of over the long run. But for simple services that will not be run on many machines or shared across teams, the time to implement it may seem counter productive. Containerization also comes with a number of inter-operability challenges, like maintaining proper networking between the containers (which i experienced nitially).
+Initially, it takes time to implement tools such as Docker, and the time spent can certainly be justified if it pays of over the long run. But for simple services that will not be run on many machines or shared across teams, the time to implement it may seem counter productive. Containerization also comes with a number of inter-operability challenges, like maintaining proper networking between the containers (which i experienced initially).
 Nameko requires rabbitmq in order to be fully functional (if you want to use rpc calls).
 
 
