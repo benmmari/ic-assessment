@@ -1,0 +1,15 @@
+version: '2.1'
+services:
+  rabbitmq:
+      image: rabbitmq
+      ports:
+        - "15672:15672"
+        - "5672:5672"
+
+  ic-assessment:
+      image: ic-assessment
+      links:
+        - rabbitmq
+      depends_on:
+        - rabbitmq
+      restart: always

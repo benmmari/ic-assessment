@@ -19,7 +19,7 @@ class AssessmentService(object):
     @rpc
     def two(self, string_list):
         for string in string_list:
-            compressed_string = unicode(zlib.compress(string), errors='replace')
+            compressed_string = str(zlib.compress(string.encode('utf-8')))
             self.string_dictionary_decoded_key[string] = compressed_string
             self.string_dictionary_encoded_key[compressed_string] = string
         return (self.string_dictionary_decoded_key)
@@ -29,4 +29,4 @@ class AssessmentService(object):
         if compressed_string in self.string_dictionary_encoded_key:
             return self.string_dictionary_encoded_key[compressed_string]
         else:
-            return "The string coresponding has not yet been compressed"
+            return "The coresponding string has not yet been compressed"
