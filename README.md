@@ -1,5 +1,4 @@
-# ic-assessment
-**Engineering Assessment for IC**
+# Engineering Assessment for IC
 
 **To run:**
 1. clone repository
@@ -35,5 +34,5 @@ What I ended up using was a combination of "depends_on" and"restart:always" and 
 
 Nameko research and implementation: ~4 hours  
 Docker research and implementation: ~10 hours  
-Documentation: ~2 hour
+Documentation: ~2 hours
 
