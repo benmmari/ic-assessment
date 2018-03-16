@@ -7,7 +7,7 @@ services:
         - "5672:5672"
 
   ic-assessment:
-      image: ic-assessment
+      build: .
       links:
         - rabbitmq
       depends_on:
