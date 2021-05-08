@@ -9,7 +9,7 @@ docker-pycreds==0.2.2
 dockerpty==0.4.1
 docopt==0.6.2
 enum-compat==0.0.2
-eventlet==0.21.0
+eventlet==0.31.0
 greenlet==0.4.13
 idna==2.6
 jsonschema==2.6.0
